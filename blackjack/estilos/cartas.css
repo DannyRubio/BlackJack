@@ -1,0 +1,692 @@
+*{box-sizing:border-box;}
+
+.SA{
+background-image:url("../imagenes/cards/AS.png");
+background-size:175px 254px;
+}
+
+.SK{
+background-image:url("../imagenes/cards/KS.png");
+background-size:175px 254px;
+}
+
+.SQ{
+background-image:url("../imagenes/cards/QS.png");
+background-size:175px 254px;
+}
+
+.SJ{
+background-image:url("../imagenes/cards/JS.png");
+background-size:175px 254px;
+}
+
+.S10{
+background-image:url("../imagenes/cards/10S.png");
+background-size:175px 254px;
+}
+
+.S9{
+background-image:url("../imagenes/cards/9S.png");
+background-size:175px 254px;
+}
+
+.S8{
+background-image:url("../imagenes/cards/8S.png");
+background-size:175px 254px;
+}
+
+.S7{
+background-image:url("../imagenes/cards/7S.png");
+background-size:175px 254px;
+}
+
+.S6{
+background-image:url("../imagenes/cards/6S.png");
+background-size:175px 254px;
+}
+
+.S5{
+background-image:url("../imagenes/cards/5S.png");
+background-size:175px 254px;
+}
+
+.S4{
+background-image:url("../imagenes/cards/4S.png");
+background-size:175px 254px;
+}
+
+.S3{
+background-image:url("../imagenes/cards/3S.png");
+background-size:175px 254px;
+}
+
+.S2{
+background-image:url("../imagenes/cards/2S.png");
+background-size:175px 254px;
+}
+
+.DA{
+background-image:url("../imagenes/cards/AD.png");
+background-size:175px 254px;
+}
+
+.DK{
+background-image:url("../imagenes/cards/KD.png");
+background-size:175px 254px;
+}
+
+.DQ{
+background-image:url("../imagenes/cards/QD.png");
+background-size:175px 254px;
+}
+
+.DJ{
+background-image:url("../imagenes/cards/JD.png");
+background-size:175px 254px;
+}
+
+.D10{
+background-image:url("../imagenes/cards/10D.png");
+background-size:175px 254px;
+}
+
+.D9{
+background-image:url("../imagenes/cards/9D.png");
+background-size:175px 254px;
+}
+
+.D8{
+background-image:url("../imagenes/cards/8D.png");
+background-size:175px 254px;
+}
+
+.D7{
+background-image:url("../imagenes/cards/7D.png");
+background-size:175px 254px;
+}
+
+.D6{
+background-image:url("../imagenes/cards/6D.png");
+background-size:175px 254px;
+}
+
+.D5{
+background-image:url("../imagenes/cards/5D.png");
+background-size:175px 254px;
+}
+
+.D4{
+background-image:url("../imagenes/cards/4D.png");
+background-size:175px 254px;
+}
+
+.D3{
+background-image:url("../imagenes/cards/3D.png");
+background-size:175px 254px;
+}
+
+.D2{
+background-image:url("../imagenes/cards/2D.png");
+background-size:175px 254px;
+}
+
+.CA{
+background-image:url("../imagenes/cards/AC.png");
+background-size:175px 254px;
+}
+
+.CK{
+background-image:url("../imagenes/cards/KC.png");
+background-size:175px 254px;
+}
+
+.CQ{
+background-image:url("../imagenes/cards/QC.png");
+background-size:175px 254px;
+}
+
+.CJ{
+background-image:url("../imagenes/cards/JC.png");
+background-size:175px 254px;
+}
+
+.C10{
+background-image:url("../imagenes/cards/10C.png");
+background-size:175px 254px;
+}
+
+.C9{
+background-image:url("../imagenes/cards/9C.png");
+background-size:175px 254px;
+}
+
+.C8{
+background-image:url("../imagenes/cards/8C.png");
+background-size:175px 254px;
+}
+
+.C7{
+background-image:url("../imagenes/cards/7C.png");
+background-size:175px 254px;
+}
+
+.C6{
+background-image:url("../imagenes/cards/6C.png");
+background-size:175px 254px;
+}
+
+.C5{
+background-image:url("../imagenes/cards/5C.png");
+background-size:175px 254px;
+}
+
+.C4{
+background-image:url("../imagenes/cards/4C.png");
+background-size:175px 254px;
+}
+
+.C3{
+background-image:url("../imagenes/cards/3C.png");
+background-size:175px 254px;
+}
+
+.C2{
+background-image:url("../imagenes/cards/2C.png");
+background-size:175px 254px;
+}
+
+.HA{
+background-image:url("../imagenes/cards/AH.png");
+background-size:175px 254px;
+}
+
+.HK{
+background-image:url("../imagenes/cards/KH.png");
+background-size:175px 254px;
+}
+
+.HQ{
+background-image:url("../imagenes/cards/QH.png");
+background-size:175px 254px;
+}
+
+.HJ{
+background-image:url("../imagenes/cards/JH.png");
+background-size:175px 254px;
+}
+
+.H10{
+background-image:url("../imagenes/cards/10H.png");
+background-size:175px 254px;
+}
+
+.H9{
+background-image:url("../imagenes/cards/9H.png");
+background-size:175px 254px;
+}
+
+.H8{
+background-image:url("../imagenes/cards/8H.png");
+background-size:175px 254px;
+}
+
+.H7{
+background-image:url("../imagenes/cards/7H.png");
+background-size:175px 254px;
+}
+
+.H6{
+background-image:url("../imagenes/cards/6H.png");
+background-size:175px 254px;
+}
+
+.H5{
+background-image:url("../imagenes/cards/5H.png");
+background-size:175px 254px;
+}
+
+.H4{
+background-image:url("../imagenes/cards/4H.png");
+background-size:175px 254px;
+}
+
+.H3{
+background-image:url("../imagenes/cards/3H.png");
+background-size:175px 254px;
+}
+
+.H2{
+background-image:url("../imagenes/cards/2H.png");
+background-size:175px 254px;
+}
+
+#carta11{
+position: absolute;
+top:var(--topCartaMano);
+left:var(--leftCartaMano);
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta12{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + (30px * 1));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta13{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + (30px * 2));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta14{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + (30px * 3));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta15{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + (30px * 4));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta16{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + (30px * 5));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta17{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + (30px * 6));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta18{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + (30px * 7));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta19{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + (30px * 8));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta110{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + (30px * 9));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta111{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + (30px * 10));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta21{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + 520px + (30px * 1));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+background-size:175px 245px;
+
+} 
+
+#carta22{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + 520px + (30px * 2));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta23{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + 520px + (30px * 3));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta24{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + 520px + (30px * 4));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta25{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + 520px + (30px * 5));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta26{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + 520px + (30px * 6));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta27{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + 520px + (30px * 7));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta28{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + 520px + (30px * 8));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta29{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + 520px + (30px * 9));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta210{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + 520px + (30px * 10));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#carta211{
+position: absolute;
+top:var(--topCartaMano);
+left:calc(var(--leftCartaMano) + 520px + (30px * 11));
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#cartaArriba{
+position: absolute;
+top:40px;
+left:500px;
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#cartaAbajo{
+position: absolute;
+top:40px;
+left:530px;
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#cartaDealer3{
+position: absolute;
+top:40px;
+left:560px;
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#cartaDealer4{
+position: absolute;
+top:40px;
+left:590px;
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#cartaDealer5{
+position: absolute;
+top:40px;
+left:610px;
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#cartaDealer6{
+position: absolute;
+top:40px;
+left:640px;
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#cartaDealer7{
+position: absolute;
+top:40px;
+left:670px;
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#cartaDealer8{
+position: absolute;
+top:40px;
+left:690px;
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#cartaDealer9{
+position: absolute;
+top:40px;
+left:710px;
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+visibility:hidden;
+border:1px solid black;
+}
+
+#baraja{
+position:absolute;
+top:20px;
+left:1000px;
+border:solid black 1px;
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+border:1px solid black;
+background-position:center;
+background-image:url(../imagenes/cartaReverso.jpg);
+background-size:var(--anchura) var(--altura);
+}
+
+#descarte{
+position:absolute;
+top:var(--topDescarte);
+left:var(--leftDescarte);
+border:solid black 1px;
+height:var(--altura);
+width:var(--anchura);
+visibility:hidden;
+border-radius:10px;
+border:1px solid black;
+background-position:center;
+background-image:url(../imagenes/cartaReverso.jpg);
+background-size:var(--anchura) var(--altura);
+}
+.sacarMitad{
+animation:sacarMitad var(--segundos) linear;
+border:1px solid black;
+}
+
+.sacarEntera{
+position:absolute;
+animation:sacarEntera var(--segundos) linear;
+border:1px solid black;
+} 
+
+#sacar{
+visibility:hidden;
+position:absolute;
+top:125px;
+left:200px;
+border:solid black 1px;
+height:var(--altura);
+width:var(--anchura);
+border-radius:10px;
+border:1px solid black;
+background-image:url(../imagenes/cartaReverso.jpg);
+background-size:var(--anchura) var(--altura);
+z-index:3;
+border:1px solid black;
+}
+
+.cartaEscondida{
+	background-image:url(../imagenes/cartaReverso.jpg);
+	background-size:var(--anchura) var(--altura);
+	animation: sacarEscondida var(--segundos) linear;
+}
+
+.sacarEscondidaMitad{
+animation:escondidaSacarMitad var(--segundos) linear;
+}
+
+.sacarEscondidaEntera{
+position:absolute;
+animation:escondidaSacarEntera var(--segundos) linear;
+}
+
+.cartaEscondida{
+	background-image:url(../imagenes/cartaReverso.jpg);
+	background-size:var(--anchura) var(--altura);
+	animation: sacarEscondida var(--segundos) linear;
+}
+
+.recogerCarta{
+	animation: recogerCarta var(--segundos) linear;
+}
+
+.recogerSacada{
+	animation: recogerSacada var(--segundos) linear;
+}
+
+.moverCarta{
+	animation: moverCarta calc(var(--segundos) * 2.5) linear;
+}

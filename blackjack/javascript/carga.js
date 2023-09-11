@@ -1,0 +1,68 @@
+function cargarImagenes(){
+const imageUrls = [
+	"imagenes/cards/SA.png",
+	"imagenes/cards/SK.png",
+	"imagenes/cards/SQ.png",
+	"imagenes/cards/SJ.png",
+	"imagenes/cards/S10.png",
+	"imagenes/cards/S9.png",
+	"imagenes/cards/S8.png",
+	"imagenes/cards/S7.png",
+	"imagenes/cards/S6.png",
+	"imagenes/cards/S5.png",
+	"imagenes/cards/S4.png",
+	"imagenes/cards/S3.png",
+	"imagenes/cards/S2.png",
+	"imagenes/cards/DA.png",
+	"imagenes/cards/DK.png",
+	"imagenes/cards/DQ.png",
+	"imagenes/cards/DJ.png",
+	"imagenes/cards/D10.png",
+	"imagenes/cards/D9.png",
+	"imagenes/cards/D8.png",
+	"imagenes/cards/D7.png",
+	"imagenes/cards/D6.png",
+	"imagenes/cards/D5.png",
+	"imagenes/cards/D4.png",
+	"imagenes/cards/D3.png",
+	"imagenes/cards/D2.png",
+	"imagenes/cards/CA.png",
+	"imagenes/cards/CK.png",
+	"imagenes/cards/CQ.png",
+	"imagenes/cards/CJ.png",
+	"imagenes/cards/C10.png",
+	"imagenes/cards/C9.png",
+	"imagenes/cards/C8.png",
+	"imagenes/cards/C7.png",
+	"imagenes/cards/C6.png",
+	"imagenes/cards/C5.png",
+	"imagenes/cards/C4.png",
+	"imagenes/cards/C3.png",
+	"imagenes/cards/C2.png",
+	"imagenes/cards/HA.png",
+	"imagenes/cards/HK.png",
+	"imagenes/cards/HQ.png",
+	"imagenes/cards/HJ.png",
+	"imagenes/cards/H10.png",
+	"imagenes/cards/H9.png",
+	"imagenes/cards/H8.png",
+	"imagenes/cards/H7.png",
+	"imagenes/cards/H6.png",
+	"imagenes/cards/H5.png",
+	"imagenes/cards/H4.png",
+	"imagenes/cards/H3.png",
+	"imagenes/cards/H2.png",
+	"imagenes/chips/fichaRoja.png",
+	"imagenes/chips/fichaVerde.png",
+	"imagenes/chips/fichaAzul.png",
+	"imagenes/chips/fichaNegra.png",
+	"imagenes/chips/fichaMorada.png"];
+
+const preloadedImages = [];
+
+for (const imageUrl of imageUrls) {
+    const img = new Image();
+    img.src = (imageUrl);
+    preloadedImages.push(img);
+}
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="estilos/general.css"/>
+<link rel="stylesheet" href="estilos/keyframes.css"/>
+<link rel="stylesheet" href="estilos/cartas.css"/>
+<script type="text/javascript" src="javascript/carga.js"></script>
+<script type="text/javascript" src="javascript/biblioteca.js"></script>
+<script type="text/javascript" src="javascript/classes.js"></script>
+
+</head>
+<body>
+<div id="baraja"></div>
+<div id="descarte"></div>
+<div id="sacar"></div>
+<div id="cartaArriba"></div>
+<div id="cartaAbajo"></div>
+<div id="cartaDealer3"></div>
+<div id="cartaDealer4"></div>
+<div id="cartaDealer5"></div>
+<div id="cartaDealer6"></div>
+<div id="cartaDealer7"></div>
+<div id="cartaDealer8"></div>
+<div id="cartaDealer9"></div>
+<div id="carta11"></div>
+<div id="carta12"></div>
+<div id="carta13"></div>
+<div id="carta14"></div>
+<div id="carta15"></div>
+<div id="carta16"></div>
+<div id="carta17"></div>
+<div id="carta18"></div>
+<div id="carta19"></div>
+<div id="carta110"></div>
+<div id="carta111"></div>
+<div id="carta21"></div>
+<div id="carta22"></div>
+<div id="carta23"></div>
+<div id="carta24"></div>
+<div id="carta25"></div>
+<div id="carta26"></div>
+<div id="carta27"></div>
+<div id="carta28"></div>
+<div id="carta29"></div>
+<div id="carta210"></div>
+<div id="carta211"></div>
+
+<div id="zonaRoja"></div>
+<div id="zonaVerde"></div>
+<div id="zonaAzul"></div>
+<div id="zonaNegra"></div>
+<div id="zonaMorada"></div>
+<div id="FinJuego"></div>
+<p id="zonaRojaP">1</p>
+<p id="zonaVerdeP">10</p>
+<p id="zonaAzulP">50</p>
+<p id="zonaNegraP">100</p>
+<p id="zonaMoradaP">500</p>
+
+
+<button id="jugar" onclick="repartir();">Jugar</button>
+<button id="pedir" onclick="repartir();">Pedir Carta</button>
+<button id="refresh" onclick="refresh();">volver a empezar</button>
+<button id="comprarFichas" onclick="comprarFichas();">Comprar fichas</button>
+<button id="cambiarFichas" onclick="cambiarFichas()">Cambiar Fichas</button>
+<button id="cambiarFichasPlus" onclick="cambiarFichasPlus();">+</button>
+<button id="cambiarFichasMinus" onclick="cambiarFichasMinus();">-</button>
+<button id="plantarse" onclick="plantarse()">Plantarse</button>
+<button id="split" onclick="split()">split</button>
+<button id="doubleDown" onclick="doubleDown()">Double Down</button>
+<button id="cerrar" onclick="cerrar()"><b>X</b></button>
+<p id="mostrarSuma"></p>
+<p id="mostrarSumaDealer"></p>
+<div id="blackjack">BLACKJACK</div>
+<p id="derrota">HAS PERDIDO!</p>
+<p id="victoria">HAS GANADO!</p>
+<p id="empate">EMPATE</p>
+
+<form id="formulario">
+<select id="barajas">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+</select>
+</form>
+
+<table id="tabla">
+<tr class="filaCabecera">
+<th>APUESTA</td>
+<th>CUENTA</td>
+</tr>
+<tr class="filaDatos">
+<td id="apuestaTabla">0€</td>
+<td id="cuenta">0</td>
+</tr>
+<tr>
+<th style="border-left:none;" class="fichas">FICHAS</th>
+<td style="border-right:none;" class="fichas" id="totalDinero">0€</td>
+</tr>
+</table>
+
+<script>
+cargarImagenes();
+//declarar el array que contentra el valor de las cartas
+var mazo=["SA","SK","SQ","SJ","S10","S9","S8","S7","S6","S5","S4","S3","S2","DA","DK","DQ","DJ","D10","D9","D8","D7","D6","D5","D4","D3","D2","CA","CK","CQ","CJ","C10","C9","C8","C7","C6","C5","C4","C3","C2","HA","HK","HQ","HJ","H10","H9","H8","H7","H6","H5","H4","H3","H2"];
+//declarar el array que contentra los mazos barajados
+var mazoBarajado=new Array();
+
+//crear las variables que harán referencia a los contenedores  
+var baraja=document.getElementById("baraja");
+var descarte=document.getElementById("descarte");
+var cartaSacada=document.getElementById("sacar");
+var carta11=document.getElementById("carta11");
+var carta12=document.getElementById("carta12");
+var carta13=document.getElementById("carta13");
+var carta14=document.getElementById("carta14");
+var carta15=document.getElementById("carta15");
+var carta16=document.getElementById("carta16");
+var carta17=document.getElementById("carta17");
+var carta18=document.getElementById("carta18");
+var carta19=document.getElementById("carta19");
+var carta110=document.getElementById("carta110");
+var carta111=document.getElementById("carta111");
+var cartaDealer9=document.getElementById("cartaDealer9");
+var cartaDealer8=document.getElementById("cartaDealer8");
+var cartaDealer7=document.getElementById("cartaDealer7");
+var cartaDealer6=document.getElementById("cartaDealer6");
+var cartaDealer5=document.getElementById("cartaDealer5");
+var cartaDealer4=document.getElementById("cartaDealer4");
+var cartaDealer3=document.getElementById("cartaDealer3");
+var cartaAbajo=document.getElementById("cartaAbajo");
+var cartaArriba=document.getElementById("cartaArriba");
+var btnJugar=document.getElementById("jugar");
+var btnPedir=document.getElementById("pedir");
+var btnPlantarse=document.getElementById("plantarse");
+var btnRefresh=document.getElementById("refresh");
+var btnSplit=document.getElementById("split");
+var btnDoubleDown=document.getElementById("doubleDown");
+var btnCambiarFichas=document.getElementById("cambiarFichas");
+var btnComprarFichas=document.getElementById("comprarFichas");
+//crear una variable que guarde los milisegundos tomando referencia la variable del CSS
+var r = document.querySelector(':root');
+var rs = getComputedStyle(r);
+var milisegundos=rs.getPropertyValue('--segundos');
+
+var altura=rs.getPropertyValue('--altura');
+var anchura=rs.getPropertyValue('--anchura');
+var alturaChip=rs.getPropertyValue('--alturaChip');;
+var anchuraChip=rs.getPropertyValue('--anchuraChip');
+var topChip=rs.getPropertyValue('--topChip');
+var leftChip=rs.getPropertyValue('--leftChip');
+
+var dimensiones =(anchura+ " "+ altura).toString(); 
+ milisegundos=milisegundos.substring(0,milisegundos.length-1);
+		milisegundos=parseInt(parseFloat(milisegundos)*1000);
+
+
+//Variable para controlar la posicion del left
+var posicionX;
+//Variable para controlar la posicion del top
+var posicionY;
+//Variable para controlar la carta escondida del dealer
+var cartaEscondida;
+
+var focus="mano1";
+var cartasSacadas=0;
+var carta1Palo;
+var carta2Palo;
+var carta1;
+var carta2;
+var carta1Dealer;
+var cuenta=0;
+var cartaCuenta;
+var totalGanancias=0;
+var totalGananciasRonda=0;
+
+
+var victoria=document.getElementById("victoria");
+var derrota=document.getElementById("derrota");
+var empate=document.getElementById("empate");
+var Mano1 = new persona();
+var Mano2 = new persona();
+var Dealer = new persona();
+    
+
+var fichas = new hucha();
+var bet=new apuesta("bet");
+var bet2=new apuesta("bet2");
+var BJ=new apuesta("blackjack");
+
+comprarFichas();
+barajar();
+mazoBarajado=["SA","SA","SQ","SJ","S10","S9","S8","S7","S6","S5","S4","S3","S2","DA","DK","DQ","DJ","D10","D9","D8","D7","D6","D5","D4","D3","D2","CA","CK","CQ","CJ","C10","C9","C8","C7","C6","C5","C4","C3","C2","HA","HK","HQ","HJ","H10","H9","H8","H7","H6","H5","H4","H3","H2"];
+</script>
+</body>
+</html>

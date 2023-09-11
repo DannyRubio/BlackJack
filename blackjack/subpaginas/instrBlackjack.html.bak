@@ -1,0 +1,157 @@
+<html>
+	<head>
+		<title>Casino Online</title>
+		<link rel="stylesheet" href="../estilos/estilos.css"/>
+		<link rel="icon" href="../imagenes/instrucciones/favicon.ico"/>
+		<style>
+		.gifDer{
+		border:1px solid black;
+		display:flex;
+		flex-direction:row;
+		cols:2;
+		}
+		
+		.gifDer p{
+		width:40%;
+		margin:20px;
+		}
+		
+		.gifDer img{
+		width:50%;
+		border:3px solid black;
+		border-radius:10px;
+		margin:20px;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<main id="contenedorPrincipal">
+			<header>
+				<!--Menú de navegación-->
+				<ul class="menu">
+					<a href="../../index.html"><li><img class="icono" src="../imagenes/instrucciones/logo.png"></li></a>
+					<a href="../../tragaperras/subpaginas/instrTragaperras.html"><li>Intrucciones <br/> Tragaperras</li></a>
+					<a href="instrBlackjack.html"><li>Intrucciones <br/> Blackjack</li></a>
+					<a href="../../tragaperras/subpaginas/tragaperras.html"><li>Tragaperras</li></a>
+					<a href="../../blackjack.html"><li>Blackjack</li></a>
+				</ul>
+			</header>
+			<div id="instrucciones">
+			
+			<br/>
+			
+				<h2>INICIO Y SALDO</h2>
+				<div class="gifDer">
+					<p>
+						Para empezar a jugar es necesario introducir la cantidad con la que se desea jugar y pulsar el bot&oacute;n "aceptar": 
+					</p>		
+						
+						<img class=  "tamanioImg" src="../gifs/ComprarFichas.gif"/>
+					
+					</div>
+				<h2>APUESTAS</h2>
+					
+					<div class="gifDer">
+					<p>
+						Para hacer una apuesta, cliquea sobre las fichas que deseas apostar.  Para retirarlas, vuelva a cliquear sobre ellas. 
+					</p>		
+						
+						<img class=  "tamanioImg" src="../gifs/Apostar_Retirar.gif"/>
+					
+					</div>	
+					
+					<div class="gifDer">
+					<p>
+						Puedes intercambiar las fichas por otras dandole al boton "cambiar fichas", y seguido dandole al boton "+" para cambiar a fichas de mayor valor o "-" para cambiar a fichas de menor valor. Para terminar de cambiar, vuelve a darle al boton "cambiar fichas". 
+					</p>		
+						
+						<img class=  "tamanioImg" src="../gifs/btnCambioFichas.gif"/>
+					
+					</div>
+				<h2>PREMIOS</h2>
+				<div class="gifDer">
+					<ol>					
+					<li> Cualquier persona que se pase de 21 pierde autom&aacute;ticamente.</li>
+					<li>si Consigues una mayor puntuaci&oacute;n sin pasarte ganas.</li>
+				<li> En caso de empate, no gana nadie.	
+					 </ol>
+						<img class=  "tamanioImg" src="../gifs/Rondas.gif"/>
+					
+					</div>
+				<h2>JUGAR</h2>
+				<div class="gifDer">
+					<p>
+					Para iniciar el juego, simplemente debe hacer click en el bot&oacute;n "jugar despues de apostar". 
+					<br>
+					EL AS vale 1 u 11 segun quiera el jugador.
+					<br>
+					las figuras cuentan 10.
+					<br>
+					ls demas tienen su valor.
+					<br>
+					<b>¡NO TE PUEDES PASAR DE 21!</b>
+					</p>		
+						
+						<img class=  "tamanioImg" src="../gifs/btnJugar.gif"/>
+					
+					</div>
+				<br/>
+				<br/>
+				<h3>Bot&oacute;n Split</h3>
+				<div class="gifDer">
+					<p>
+					Si tienes dos cartas iguales y suficientes fichas para dobler la apuesta puedes separarlas en dos mazos dando al boton "split". 
+					</p>		
+						
+						<img class=  "tamanioImg" src="../gifs/btnSplit.gif"/>
+					
+					</div>
+			
+				
+				<br/>
+				<br/>
+				<h3>Bot&oacute;n Double Down</h3>
+				<div class="gifDer">
+					<p>
+					Si la suma de tus 2 primeras cartas es 10 u 11 y suficientes fichas para dobler la apuesta puedes separarlas en dos mazos dando al boton "Double Down". SOlo se dara una carta, no se podr&aacute;n pedir m&aacute;s. 
+					</p>		
+						
+						<img class=  "tamanioImg" src="../gifs/btnDoubleDown.gif"/>
+					
+					</div>
+				<br/>
+				<br/>
+				
+				<h3>Blackjack</h3>
+				<div class="gifDer">
+					<p>
+					Si en tus dos primeras cartas te toca un As y carta con valor de 10 recibiras autom&aacute;ticamente 1.5 de tu apuesta.  Si el dealer saca un Blackjack tambien, se considerara un empate. 
+					</p>		
+						
+						<img class=  "tamanioImg" src="../gifs/blackjack.gif"/>
+					
+					</div>
+				<br/>
+				<br/>
+				<h2>Salir</h2>
+				<div class="gifDer">
+					<p>
+					Para salir del juego, simplemente debe hacer click en el bot&oacute;n rojo con la "X". 
+					
+					</p>		
+						
+						<img class=  "tamanioImg" width="100px" src="../imagenes/salir.png"/>
+			</div>
+			<footer>
+					<script type="text/javascript">
+						<!--Obtener el año actual-->
+						let fecha = new Date();
+						let anio= fecha.getFullYear();
+						
+						document.write("<p> &#169; "+anio+" - DANNY </p>");
+					</script>
+			</footer>
+		</main>
+	</body>
+</html>

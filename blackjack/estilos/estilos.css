@@ -1,0 +1,795 @@
+/*--------------------------------------------------------------------------------------------------------*/
+									/*ESTILOS PARA TODAS LAS PÁGINAS*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*Fuente para el menú y los encabezados del sitio web*/
+@font-face{
+    font-family:"lux";
+    src:url("../fuentes/lux.ttf");
+}
+
+img{vertical-align: middle;}
+h2, h3{font-family: "lux";}
+
+/*Estilos del body*/	
+body{
+	background-image: url(../imagenes/billuv1.gif);
+	background-repeat: no-repeat;
+	background-size: 100%;
+  	background-position: center;
+	background-attachment: fixed;
+	font-family: verdana;
+	font-size: 20px;
+}
+	/*Contenedor principal de todas las páginas*/
+	#contenedorPrincipal{
+		max-width: 992px;
+		width:100%;
+		margin: 0% auto 0% auto;
+		background-color: white;
+	}
+		/*Bloque para insertar el menú de navegación*/
+		header{
+			width:100%;
+			height: 15%;
+			display: flex;
+			background-color: #e3e4e5;
+			font-family: "lux";
+		}
+			
+			/*Clase para el menú de navegación*/
+			.menu{
+				list-style: none;
+				width: 100%;
+				display: flex;
+				padding: 0% 0% 0% 0%;
+				margin: 0% 0% 0% 0%;
+			}
+				/*Clase para los links del menú de navegación*/
+				.menu a {
+					display: inline;
+					width: 20%;
+					font-size: 20px;
+					text-align: center;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-box-pack: center;
+					-webkit-box-align: center;
+					display: -moz-box;
+					-moz-box-orient: vertical;
+					-moz-box-pack: center;
+					-moz-box-align: center;
+					display: box;
+					box-orient: vertical;
+					box-pack: center;
+					box-align: center;
+					margin: 0px 0px 0px 0px ;
+				}
+				
+			/*Clase para el logotipo del sitio web*/	
+			.icono{
+				width: 75%;
+				vertical-align: top;
+				margin: 0px 0px 0px 0px ;
+			}
+				
+				/*Estilo para el comportamiento del logo del sitio web*/
+				.menu img:hover{
+					width: 85%;
+				}
+				/*Estilo para el comportamiento del logo del sitio web*/
+				.menu a:hover{
+					font-size: 23px;
+				}
+		
+				/*Estilo para todos textos con hipervínculo de la página*/
+				a, a:visited{
+					text-decoration: none;
+					color: black;
+				}
+				
+	
+			
+	/*Estilos para el pie de página*/	
+	footer{
+		width: 100%;
+		height: 10%;
+		background-color: #e3e4e5;
+		text-align: center;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-box-pack: center;
+		-webkit-box-align: center;
+		display: -moz-box;
+		-moz-box-orient: vertical;
+		-moz-box-pack: center;
+		-moz-box-align: center;
+		display: box;
+		box-orient: vertical;
+		box-pack: center;
+		box-align: center;
+		margin: 0px 0px 0px 0px ;
+		font-family: "lux";
+		}
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/		
+											/*PÁGINA INDEX*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*Clase para las dimensiones de cada bloque, que permiten acceder a las instrucciones de cada juego en la página index*/
+.juego{
+	width: 400px;
+	height: 280px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 50px 85px 80px 0px;
+	border: solid 1px black;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	display: -moz-box;
+	-moz-box-orient: vertical;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+	display: box;
+	box-orient: vertical;
+	box-pack: center;
+	box-align: center;
+}
+	/*Clases para los fondos de cada bloque*/
+	.juego1{background-image: url("../imagenes/pantPremio.png");}
+	.juego2{background-image: url("../imagenes/blackjack1.png");}
+
+/*Clase para aumentar la fuente cuando se acerque el ratón*/
+.juego:hover{font-size: 40px;}
+
+h3{text-align: center;}
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+		
+/*--------------------------------------------------------------------------------------------------------*/
+								/*PÁGINA INSTRUCCIONES TRAGAPERRAS*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*Bloque para dar estilo al contenido de la página de intrucciones*/
+#instrucciones{
+	width: 90%;
+	margin: 0% auto 0% auto;
+	text-align: justify;
+}
+
+/*Clase para los tamaños de las imágenes en la página instrucciones tragaperras*/
+.tamanioImg{
+	width: 60px;
+	
+}
+/*Clase para los tamaños de las imágenes en la página instrucciones tragaperras*/
+.tamanioImg2{
+	width: 110px;
+}
+
+/*Estilo para la lista de los botones de avance y explicación de las imágenes en la página de instrucciones*/
+.lista{
+	list-style: none;
+	margin: 0% 0% 0% 0%;
+	display: block;
+}
+		.lista li {
+				display: block;
+				font-size: 100%;
+				width: 100%;
+		}
+		
+/*Span para representar el mensaje de bonus en la página de instrucciones. Animación definida más abajo, en "JUEGO MÁQUINA TRAGAPERRAS"*/
+span.bonus{
+	font-family:"honey";
+	font-size: 30px;
+	color:#8a9597;
+	animation-name: parpadeo;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-name:parpadeo;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	height: 40px;
+}
+	
+/*Span para representar el mensaje en la página de instrucciones. Animación definida más abajo, en "JUEGO MÁQUINA TRAGAPERRAS"*/
+span.avance{
+	font-family:"honey";
+	font-size: 100%;
+	animation-name: parpadeo;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-name:parpadeo;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	height: 6%;
+}
+			
+/*Tabla líneas de premio*/	
+
+/*Estilos para la tabla de la página de instrucciones de la máquina tragaperras (líneas de premio) y la página creada con jvascript para el resumen de premios*/
+table{
+	margin-left: auto;
+	margin-right: auto;
+	width:80%;
+	border:dotted 5px silver; 
+	border-collapse: collapse;
+}
+	table th{
+		border:dotted 5px silver; 
+		border-collapse: collapse;
+		text-align: center;
+		font-size: 35px;
+	}
+	table td{
+		border:dotted 5px silver; 
+		border-collapse: collapse;
+		text-align: center;
+		font-size: 28px;
+	}
+	
+		/*Clase para las imágenes generales de las líneas de premio de la página de intrucciones del juego (tabla)*/
+		.instrPremiosGen{
+			width: 300px;
+		}
+
+		/*Clase para las imágenes de cada tipo de las líneas de premio de la página de intrucciones del juego (tabla)*/
+		.instrPremios{
+			width: 70px;
+		}			
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+										/*JUEGO MÁQUINA TRAGAPERRAS*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*Bloque para la máquina tragaperras*/
+#tragaperras{
+	width:100%;
+	display: flex;
+	margin: 10px 0px 10px 0px;
+}	
+
+	/*Fuentes web*/
+	/*Fuente para los mensajes de saldo y apuesta de la tragaperras*/
+	@font-face{
+		font-family:"honey";
+		src:url("../media/honey.ttf");
+	}
+
+	/*Fuente para los mensajes de premio*/	
+	@font-face{
+		font-family:"party";
+		src:url("../media/party.otf");
+	}	
+	
+	/*Bloque mitad Pantalla izquierda, para poder ajustar la máquina*/
+	#pantallaIzq{
+		width: 55%;
+	}
+		
+		/*Bloque para la máquina (contiene los rodillos de giro)*/
+		#maquina{
+			width: 426px;
+			margin: 3% 0% 0% auto;
+		}
+			/*Dimensiones de los contenedores de cada imagen para la máquina*/
+			#rodilloIzquierda{
+				width:130px;
+				float: left;
+				text-align: center;
+				border: 5px solid #8a9597;
+				border-radius: 2%;
+				margin-right: 2px;
+			}
+				/*div superior, no se ve al principio*/
+				#contenedor11{ 
+					width:130px;
+					height:130px;
+					display: none;
+				}
+
+				/*Contenedor para la imagen superior (visible) del rodillo izquierdo*/
+				#contenedor12{
+					width:130px;
+					height:130px;
+				}
+				
+				/*Contenedor para la imagen central (visible) del rodillo izquierdo*/
+				#contenedor13{ 
+					width:130px;
+					height:130px;
+				}
+				
+				/*Contenedor para la imagen inferior (visible) del rodillo izquierdo*/
+				#contenedor14{ 
+					width:130px;
+					height:130px;
+				}
+
+			/*Rodillo central*/
+			#rodilloCentral{
+				width:130px;
+				float: left;
+				text-align: center;
+				border: 5px solid #8a9597;
+				border-radius: 2%;
+				margin-left: 1px;
+				margin-right: 2px;
+			}
+				/*div superior, no se ve al principio*/
+				#contenedor21{ 
+					width:130px;
+					height:130px;
+					display: none;
+				}
+				
+				/*Contenedor para la imagen superior (visible) del rodillo central*/
+				#contenedor22{ 
+					width:130px;
+					height:130px;
+				}
+				
+				/*Contenedor para la imagen central (visible) del rodillo central*/
+				#contenedor23{ 
+					width:130px;
+					height:130px;
+				}
+				
+				/*Contenedor para la imagen inferior (visible) del rodillo central*/
+				#contenedor24{  
+					width:130px;
+					height:130px;
+				}
+
+			/*RodilloDerecha*/
+			#rodilloDerecha{
+				width:130px;
+				float: left;
+				text-align: center;
+				border: 5px solid #8a9597;
+				border-radius: 2%;
+				margin-left: 1px;
+			}
+			
+				/*div superior, no se ve al principio*/
+				#contenedor31{ 
+					width:130px;
+					height:130px;
+					display: none;
+				}
+				
+				/*Contenedor para la imagen superior (visible) del rodillo derecho*/
+				#contenedor32{ 
+					width:130px;
+					height:130px;
+				}
+				
+				/*Contenedor para la imagen central (visible) del rodillo derecho*/
+				#contenedor33{
+					width:130px;
+					height:130px;
+				}
+				
+				/*Contenedor para la imagen inferior (visible) del rodillo derecho*/
+				#contenedor34{ 
+					width:130px;
+					height:130px;
+				}
+			
+	/*Bloque para los mensajes de saldo y premio*/
+	#avisos{
+		width: 45%;
+		text-align: center;
+	}
+			
+		/*Bloque para mostrar el mensaje de saldo actual*/
+		#saldo{
+			font-family:"honey";
+			font-size: 120%;
+			margin-top: 2%;
+			height: 30px;
+		}
+		
+		/*Bloque para mostrar el mensaje de apuesta actual*/
+		#apuesta{
+			font-family:"honey";
+			font-size: 120%;
+			height: 30px;
+		}
+		
+		/*Bloque para mostrar aviso en caso de obtener avances*/
+		#hayAvances{
+			font-family:"honey";
+			font-size: 120%;
+			animation-name: parpadeo;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			-webkit-animation-name:parpadeo;
+			-webkit-animation-duration: 1s;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+			height: 30px;
+		}
+		
+		/*Bloque para mostrar los premios, por cuánto se multiplica la apuesta*/
+		#premio{
+			font-family:"party";
+			height: 70px;
+			font-size:30px;
+			color:#8a9597;
+			text-align:center;
+			margin: 0% 0% 0% 0%;
+		}
+		
+		/*Bloque para mostrar la imagen de la línea premiada, o caso de  no obtener premio, la imagen .gif de la chica*/
+		#imgPremio{
+			text-align: center;
+			align-content: center;
+			height: 230px;
+		}
+		
+		/*Bloque para mostrar el BONUS*/
+		#TipoPremio{
+			font-family:"honey";
+			font-size: 30px;
+			color:#8a9597;
+			animation-name: parpadeo;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			-webkit-animation-name:parpadeo;
+			-webkit-animation-duration: 1s;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+			height: 40px;
+		}
+			
+			/*Definición de la animación*/
+			@-moz-keyframes parpadeo{  
+				0% { opacity: 1.0;}
+				50% { opacity: 0.0;}
+				100% { opacity: 1.0;}
+			}
+
+			@-webkit-keyframes parpadeo {  
+				0% { opacity: 1.0;}
+				50% { opacity: 0.0;}
+				100% { opacity: 1.0;}
+			}
+
+			@keyframes parpadeo {  
+				0% { opacity: 1.0;}
+				50% { opacity: 0.0;}
+				100% { opacity: 1.0;}
+			}
+			
+		
+		/*Bloque para los controles*/
+		#controles{
+			width:989px;
+			text-align: justify;
+			background-color: silver;
+			display: flex;
+			border: solid 3px #8a9597;
+		}	
+			/*Estilo general de los botones*/
+			.boton{
+				cursor: pointer;
+				outline: 2px;
+				transition: all .1s linear;
+				color: #000000;
+				font-family: honey;
+				border: 1px solid black;
+				padding: 6% 1% 6% 1%;
+				margin: 1% 0% 2% 1%;
+				border-radius: 5%;
+			}
+				/*Estilo para simular el movimiento del botón al clickarlo (hacia abajo)*/
+				.boton:active {
+					transform: translateY(5px);
+				}
+			
+			/*Bloque para el select de la cantidad de dinnero a añadir y el botón inferior "añadir"*/
+			#sumarCantidad{
+				width: 10%;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-box-pack: center;
+				-webkit-box-align: center;
+				display: -moz-box;
+				-moz-box-orient: vertical;
+				-moz-box-pack: center;
+				-moz-box-align: center;
+				display: box;
+				box-orient: vertical;
+				box-pack: center;
+				box-align: center;
+			}
+			
+				/*Select cantidad de dinero a añadir*/
+				#selectCantidad{
+					font-size: 150%;
+					font-family: honey;
+					margin-left: 20%;
+					margin-bottom: 2%;
+				}
+				
+				/*Botón para confirmar la cantidad a añadir*/
+				#cantidad{
+					background-color: #AD09ED ;
+					box-shadow: 0 8px 0 #9408CC ;
+					padding: 1% 14% 1% 14%;
+					margin-left: 20%;
+				}
+					/*Estilo para el efecto de iluminación al clickar en el botón*/
+					#cantidad:active {
+						background-color: #F30DFF ;
+						box-shadow: 0 5px 0 #CA0BD4 ;
+					}
+			/*Bloque para el resto de botones (excluyendo los de seleccionar y añadir cantidad)*/		
+			#restoBotones{width: 89%;}		
+				
+				/*Botón para el botón "COBRAR", que permite retirar el crédito y activa la página de resumen de juego*/
+				#salir{
+					background-color: #E6034C;
+					padding: 3% 1% 3% 1%;
+					box-shadow: 0 8px 0 #BF1437;
+					
+				}
+					/*Estilo para el efecto de iluminación al clickar en el botón*/
+					#salir:active {
+						background-color:#FF005E;
+						box-shadow: 0 5px 0 #D9173F;
+					}
+				
+					/*Estilo para los botones "AVANCE"*/	
+					#avance1, #avance2, #avance3{
+						background-color: #F5E15C;
+						box-shadow: 0 8px 0 #E6D356;
+						padding: 3% 1% 3% 1%;
+						margin-left: 2%; 
+					}
+						/*Estilo para el efecto de iluminación al clickar en el botón*/
+						#avance1:active, #avance2:active, #avance3:active {
+							transform: translateY(5px);
+							background-color: #FDFF07;
+							box-shadow: 0 5px 0 #F0F207;
+						}
+		
+					/*Estilo para el botón "+APUESTA"*/
+					#apostarMas{
+						background-color: #088AFF;
+						box-shadow: 0 8px 0 #0774D6;
+						padding: 3% 1% 3% 1%;
+						margin-left: 8%;
+					}
+						/*Estilo para el efecto de iluminación al clickar en el botón*/
+						#apostarMas:active {
+							background-color:#02C3FF;
+							box-shadow: 0 5px 0 #0298C7;
+						}
+	
+					/*Estilo para el botón "-APUESTA"*/
+					#apostarMenos{
+						background-color: #F7760E;
+						box-shadow: 0 8px 0 #DB680C;
+						padding: 3% 1% 3% 1%;
+					}
+						/*Estilo para el efecto de iluminación al clickar en el botón*/
+						#apostarMenos:active {
+							background-color:#FFA314;
+							box-shadow: 0 5px 0 #F29B13;
+						}
+		
+					/*Estilo para el botón "JUGAR"*/
+					#empezar{
+						background-color: #32CC07;
+						box-shadow: 0 8px 0 #067308;
+						padding: 2% 5% 2% 5%;
+						font-size: 140%;
+						margin-left: 9%;
+					}
+						/*Estilo para el efecto de iluminación al clickar en el botón*/
+						#empezar:active {
+							background-color:#3BF209;
+							box-shadow: 0 5px 0 #08990A;
+						}
+						
+/*--------------------------------------------------------------------------------------------------------*/	
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+											/*JUEGO BLACKJACK*/
+/*--------------------------------------------------------------------------------------------------------*/
+		
+/*Estilo para las dimensiones del frame que contiene el juego del Blackjack*/
+#frameBlackjack{ 
+	width:989px;
+	height: 520px;
+}		
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+	
+	
+/*--------------------------------------------------------------------------------------------------------*/
+									/*ESTILOS USADOS DESDE JAVASCRIPT*/			
+/*--------------------------------------------------------------------------------------------------------*/
+		
+/*Clases para las imágenes de la máquina*/
+.cereza{
+	background-image:url("../imagenes/cerezas.png");
+	background-size: cover;
+	background-position: center;
+	}
+.fresa{
+	background-image:url("../imagenes/fresa.png");
+	
+	background-size: cover;
+	background-position: center;
+	}
+.manzana{
+	background-image:url("../imagenes/manzana.png");
+	background-size: cover;
+	background-position: center;
+	}
+.platano{
+	background-image:url("../imagenes/platano.png");
+	background-size: cover;
+	background-position: center;
+	}
+.campana{
+	background-image:url("../imagenes/campana.png");
+	background-size: cover;
+	background-position: center;
+	}
+.uvas{
+	background-image:url("../imagenes/uvas.png");
+	background-size: cover;
+	background-position: center;
+	}
+.diamante{
+	background-image:url("../imagenes/diamante.png");
+	background-size: cover;
+	background-position: center;
+	}
+.monedas{
+	background-image:url("../imagenes/monedas.png");
+	background-size: cover;
+	background-position: center;
+	}
+.barSin{
+	background-image:url("../imagenes/barSin.png");
+	background-size: cover;
+	background-position: center;
+	}
+.num7{
+	background-image:url("../imagenes/num7.png");
+	background-size: cover;
+	background-position: center;
+	}
+
+
+/* Clases para la animación (giro de los rodillos)*/
+
+/*Rodillo izquierdo*/
+.mover11{animation:contenedor11;} /*Guardar en la clase la animación para .contenedor11*/
+.mover12{animation:contenedor12;} /*Guardar en la clase la animación para .contenedor12*/
+.mover13{animation:contenedor13;} /*Guardar en la clase la animación para .contenedor13*/
+.mover14{animation:contenedor14;} /*Guardar en la clase la animación para .contenedor14*/
+	
+/*Rodillo central*/
+.mover21{animation:contenedor21;} /*Guardar en la clase la animación para .contenedor21*/
+.mover22{animation:contenedor22;} /*Guardar en la clase la animación para .contenedor22*/
+.mover23{animation:contenedor23;} /*Guardar en la clase la animación para .contenedor23*/
+.mover24{animation:contenedor24;} /*Guardar en la clase la animación para .contenedor24*/
+	
+/*Rodillo derecho*/
+.mover31{animation:contenedor31;} /*Guardar en la clase la animación para .contenedor21*/
+.mover32{animation:contenedor32;} /*Guardar en la clase la animación para .contenedor22*/
+.mover33{animation:contenedor33;} /*Guardar en la clase la animación para .contenedor23*/
+.mover34{animation:contenedor34;} /*Guardar en la clase la animación para .contenedor24*/
+	
+
+/*Animaciones de los bloques de cada rodillo*/
+/*Rodillo izquierdo*/
+
+/*Definir la animación para el contenedor11*/
+@keyframes contenedor11{
+	from {top:-130px;}
+	to {top:0px;}
+}
+
+/*Definir la animación para el contenedor12*/
+@keyframes contenedor12{
+	from {top:0px;}
+	to {top:130px;}
+}
+
+/*Definir la animación para el contenedor13*/
+@keyframes contenedor13{
+	from {top:130px;}
+	to {top:260px;}
+}
+
+/*Definir la animación para el contenedor14*/	
+@keyframes contenedor14{
+from {top:260px;}
+to {top:390px;}
+}
+
+/*Rodillo central*/
+/*Definir la animación para el contenedor21*/
+@keyframes contenedor21{
+	from {top:-130px;}
+	to {top:0px;}
+}
+
+/*Definir la animación para el contenedor22*/
+@keyframes contenedor22{
+	from {top:0px;}
+	to {top:130px;}
+}
+
+/*Definir la animación para el contenedor23*/
+@keyframes contenedor23{
+	from {top:130px;}
+	to {top:260px;}
+}
+
+/*Definir la animación para el contenedor24*/	
+@keyframes contenedor24{
+from {top:260px;}
+to {top:390px;}
+}
+
+/*Rodillo derecho*/
+/*Definir la animación para el contenedor31*/
+@keyframes contenedor31{
+	from {top:-130px;}
+	to {top:0px;}
+}
+
+/*Definir la animación para el contenedor32*/
+@keyframes contenedor32{
+	from {top:0px;}
+	to {top:130px;}
+}
+
+/*Definir la animación para el contenedor33*/
+@keyframes contenedor33{
+	from {top:130px;}
+	to {top:260px;}
+}
+	
+/*Definir la animación para el contenedor34*/	
+@keyframes contenedor34{
+from {top:260px;}
+to {top:390px;}
+}
+/*--------------------------------------------------------------------------------------------------------*/

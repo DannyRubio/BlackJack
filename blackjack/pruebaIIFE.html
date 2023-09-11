@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+<title>
+</title>
+</head>
+<body>
+<p id="i">X</p>
+<p id="p">X</p>
+<br/>
+<br/>
+<p id="i2">X</p>
+<p id="p2">X</p>
+
+<button onclick="runBoth()">RUN</button>
+<script>
+	
+function runBoth(){
+	run();
+	run2();
+}
+function run() {
+    var miliseconds = 0;
+    setTimeout(() => {
+        for (var i = 1; i <= 5; i++) {
+            (function (i) {
+                setTimeout(() => {
+                    document.getElementById("i").textContent = i;
+                }, miliseconds);
+            })(i);
+			miliseconds += 500;
+            setTimeout(() => {
+                document.getElementById("p").textContent = i;
+            }, miliseconds);
+        }
+    }, miliseconds);
+}
+
+function run2() {
+	
+    var miliseconds = 0;
+        for (var i = 1; i <= 5; i++) {
+            subRun(i,miliseconds);
+			
+			miliseconds += 500;
+            setTimeout(() => {
+                document.getElementById("p2").textContent = i;
+            }, miliseconds);
+        }
+}
+
+function subRun(i,ms) {
+                setTimeout(() => {
+                    document.getElementById("i2").textContent = i;
+                }, ms);
+            }
+</script>
+</body>
+</html>
